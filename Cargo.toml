@@ -1,5 +1,5 @@
 [package]
-name = "Server"
+name = "conceptius_server"
 version = "0.1.0"
 edition = "2024"
 
@@ -9,3 +9,5 @@ serde = { version = "1", features = ["derive"] }
 tokio = { version = "1.49.0", features = ["full"]}
 tower = "0.5.3"
 tower-http = { version = "0.5", features = ["trace", "cors"] }
+diesel = { version = "2.2.0", features = ["postgres"] }
+dotenvy = "0.15"
